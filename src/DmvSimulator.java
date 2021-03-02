@@ -20,7 +20,7 @@ public class DmvSimulator {
 			y++;
 			
 				if (y == spot - 1) {
-					System.out.println("Number " + spot + ": You do not have the required paperwork.");
+					System.out.println("Number " + spot + ": You do NOT have the required paperwork! Get the right paperwork and wait in line again!");
 					System.exit(0);
 				}
 			}
