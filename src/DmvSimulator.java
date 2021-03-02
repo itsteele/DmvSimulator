@@ -20,7 +20,9 @@ public class DmvSimulator {
 			y++;
 			
 				if (y == spot - 1) {
-					System.out.println("Number " + spot + ": You do NOT have the required paperwork! Get the right paperwork and wait in line again!");
+					int miracle = (int) (Math.random() * (100 - 1)) + 1;
+					if (miracle == 1) { System.out.println("You have the required paperwork. You're all set!"); }
+					else { System.out.println("Number " + spot + ": You do NOT have the required paperwork! Get the right paperwork and wait in line again!"); }
 					System.exit(0);
 				}
 			}
